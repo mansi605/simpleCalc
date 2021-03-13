@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+
+<div class="main">
+
+<div class="main2">
+<div id="des">
+ <pre>
+Enter the total Amount      <input id="new" value=" ">
+</pre>
+</div>
+
+<div id="des">
+
+<pre>
+Enter the Number of Persons <input id="new1" value=" ">
+</pre> 
+</div>
+
+<button  id="click" 
+onclick= "myfunction()"> calculate </button>
+<p id="demo"></p>
+
+</div>
+<div class="box">
+
+<div class="box1">
+<pre>
+First Name     <input type="text" id="fname">
+</pre>
+</div>
+
+<div class="box1">
+<pre>
+Last Name      <input type="text" id="lname">
+</pre>
+</div>
+
+<div class="box1">
+<pre>
+Money Paid      <input  id="money"> 
+<button id="but1" onclick="calcu()"> Calculate </button>
+</pre>
+
+</div>
+
+<div class="box1">
+<pre>
+Will give more  <input type="text" id= "give">
+</pre>
+</div>
+
+<div class="box1">
+<pre>
+Get return      <input type="text" id="back">
+</pre>
+</div>
+
+<div class="box4">
+
+<button id="but2"
+onclick="add1()"> ADD </button>
+
+
+<button id="but2"
+onclick="remove()"> REMOVE </button>
+
+
+</div>
+
+</div>
+<div class="sub">
+<table id="mytable">
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Money paid</th>
+<th>will give more</th>
+<th>get return</th>
+</tr>
+
+
+</table>
+</div>
+<div>
+
+<button id="but3" onclick="exportTableToExcel('mytable')">Download Data</button>
+</div>
+</div>
+<script>
+var tab, rIndex;
+function add1(){
+
+ rIndex,tab = document.getElementById("mytable"),
+newrow = tab.insertRow(tab.length),
+cell1 = newrow.insertCell(0),
+cell2 = newrow.insertCell(1),
+cell3 = newrow.insertCell(2),
+cell4 = newrow.insertCell(3),
+cell5 = newrow.insertCell(4),
+
+fname= document.getElementById("fname").value,
+lname= document.getElementById("lname").value,
+money= document.getElementById("money").value,
+give= document.getElementById("give").value,
+back= document.getElementById("back").value;
+
+
+cell1.innerHTML=fname;
+cell2.innerHTML=lname;
+cell3.innerHTML=money;
+cell4.innerHTML=give;
+cell5.innerHTML=back;
+
+select();
+
+}
+
+function select() {
+	for(var i=1; i< tab.rows.length; i++)
+{
+	tab.rows[i].onclick= function()
+{
+	rIndex = this.rowIndex;
+document.getElementById("fname").value = this.cells[0].innerHTML;
+document.getElementById("lname").value = this.cells[1].innerHTML;
+document.getElementById("money").value = this.cells[2].innerHTML;
+document.getElementById("give").value = this.cells[3].innerHTML;
+document.getElementById("back").value = this.cells[4].innerHTML;
+
+}
+}
+}
+
+
+function remove(){
+
+tab.deleteRow(rIndex);
+fname= document.getElementById("fname").value =" ";
+lname= document.getElementById("lname").value =" ";
+money= document.getElementById("money").value =" ";
+give= document.getElementById("give").value =" ";
+back= document.getElementById("back").value =" ";
+
+}
+
+
+var ans , yns, y, a, b ,c ,a1, d1 ,e ,f ,z ;	
+function calcu(){
+
+var x =  Number(document.getElementById("money").value);
+
+if(x== " ")
+{	
+	alert("Enter a valid number");
+}
+else if(isNaN(x)){
+	alert("Enter a valid number");
+}
+
+
+else if(x > z){
+		ans= x-z;
+		document.getElementById("back").value= ans;
+		document.getElementById("give").value= 0;
+}
+
+else{
+	yns= z-x;
+		document.getElementById("give").value= yns;
+document.getElementById("back").value= 0;
+		
+}
+}	
+
+
+
+function myfunction() {
+
+
+
+a= Number(document.getElementById("new").value);
+
+b= Number(document.getElementById("new1").value);
+
+if(a==" ")
+{
+	
+	alert("Enter a valid number");
+}
+
+else if(isNaN(a)){
+	alert("Enter a valid number");
+}
+
+else if(b==" ")
+{
+	
+	alert("Enter a valid number");
+}
+
+else if(isNaN(b)){
+	alert("Enter a valid number");
+}
+
+else
+{
+c = parseFloat(a) / parseFloat(b) ;
+z = c.toFixed(2);
+document.getElementById("demo").innerHTML = "Each person will pay <br>"  + z + "rs";
+}
+}
+
+
+</script>
+
+
+
+
+</body>
+<script>
+
+function exportTableToExcel(tableID, filename = ''){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    
+    // Specify file name
+    filename = filename?filename+'.xls':'excel_data.xls';
+    
+    // Create download link element
+    downloadLink = document.createElement("a");
+    
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+} 
+</script>
+
+
+
+
+</body>
+</html>

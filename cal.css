@@ -1,0 +1,625 @@
+﻿* {
+	padding:0px;
+	margin:0px;
+}
+
+.main{
+	max-width:100%;
+}
+
+.sub {
+	width:90%;
+	padding:5%;
+}
+
+.main2{
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:1.5vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#new{
+	width:20%;
+	padding:2%;
+        margin:2%;
+	font-size:1.2vw;
+border-radius:5%;
+	
+	
+}
+
+#new1{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+#click{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.5vw;
+	border-radius:35%;
+}
+
+#but2{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.5vw;
+	border-radius:35%;
+}
+
+#but1{
+		
+	
+	padding:2%;
+	margin:2%;
+	font-size:1.3vw;
+	border-radius:5%;
+}
+
+#but3{
+		
+	width:15%;
+	padding:2%;
+	margin:5%;
+	font-size:1.2vw;
+	border-radius:5%;
+	background-color:black;
+	color:yellow;
+}
+
+
+
+.box{
+		
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:1.5vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#fname{
+		width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+#lname{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+#give{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+
+#back{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+#money{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.2vw;
+	border-radius:5%;
+}
+
+#mytable{
+	max-width:100%;
+		
+	border:1px solid white;
+	background-color:black;
+	color:yellow;
+	}
+
+th,td {
+	
+
+padding:4%;
+	border:1px solid white;
+font-size:1.4vw;
+background-color:black;
+	color:yellow;
+}
+.sub {
+	width:90%;
+	padding:5%;
+}
+
+
+
+
+@media(max-width:3000px){
+
+
+.main2{
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#new{
+	width:20%;
+	padding:2%;
+        margin:2%;
+	font-size:2vw;
+border-radius:5%;
+	
+	
+}
+
+#new1{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:5%;
+}
+
+#click{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:35%;
+}
+
+#but2{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:35%;
+}
+
+#but1{
+		
+	
+	padding:2%;
+	margin:2%;
+	font-size:1.3vw;
+	border-radius:5%;
+}
+
+#but3{
+		
+	width:15%;
+	padding:2%;
+	margin:5%;
+	font-size:1.5vw;
+	border-radius:5%;
+	background-color:black;
+	color:yellow;
+}
+
+
+
+.box{
+		
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#fname{
+		width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:5%;
+}
+
+#lname{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.6vw;
+	border-radius:5%;
+}
+
+#give{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+
+#back{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+#money{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+#mytable{
+	max-width:100%;
+		
+	border:1px solid white;
+	background-color:black;
+	color:yellow;
+	}
+
+th,td {
+	
+
+padding:4%;
+	border:1px solid white;
+font-size:1.7vw;
+background-color:black;
+	color:yellow;
+}
+
+}
+
+
+
+@media(max-width:800px){
+
+
+.main2{
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#new{
+	width:20%;
+	padding:2%;
+        margin:2%;
+	font-size:2vw;
+border-radius:5%;
+	
+	
+}
+
+#new1{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:5%;
+}
+
+#click{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:35%;
+}
+
+#but2{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.9vw;
+	border-radius:35%;
+}
+
+#but1{
+		
+	
+	padding:2%;
+	margin:2%;
+	font-size:1.3vw;
+	border-radius:5%;
+}
+
+#but3{
+		
+	width:15%;
+	padding:2%;
+	margin:5%;
+	font-size:1.5vw;
+	border-radius:5%;
+	background-color:black;
+	color:yellow;
+}
+
+
+
+.box{
+		
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2.3vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#fname{
+		width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:5%;
+}
+
+#lname{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.8vw;
+	border-radius:5%;
+}
+
+#give{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+
+#back{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+#money{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:1.7vw;
+	border-radius:5%;
+}
+
+#mytable{
+	max-width:100%;
+		
+	border:1px solid white;
+	background-color:black;
+	color:yellow;
+	}
+
+th,td {
+	
+
+padding:4%;
+	border:1px solid white;
+font-size:1.7vw;
+background-color:black;
+	color:yellow;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:500px){
+
+.main2{
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2.6vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+
+.sub {
+	width:90%;
+	padding:5%;
+}
+
+#new{
+	width:20%;
+	padding:2%;
+        margin:2%;
+	font-size:2.3vw;
+border-radius:5%;
+	
+	
+}
+
+#new1{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.5vw;
+	border-radius:5%;
+}
+
+#click{
+		
+	width:20%;
+	padding:1%;
+	margin:2%;
+	font-size:2.6vw;
+	border-radius:5%;
+}
+
+#but2{
+		
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2vw;
+	border-radius:35%;
+}
+
+#but1{
+		
+	
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+#but3{
+		
+	width:20%;
+	padding:2%;
+	margin:5%;
+	font-size:2vw;
+	border-radius:5%;
+	background-color:black;
+	color:yellow;
+}
+
+
+
+.box{
+		
+	width:60%;
+	padding:5% 15% 4% 15%;
+	border: 1px solid black;
+	margin:4% 5% 4% 5%;
+	font-size:2.7vw;
+	text-align:center;
+	background-color:black;
+	color:yellow;
+	font-weight:bold;
+	
+}
+
+#fname{
+		width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+#lname{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+#give{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+
+#back{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+#money{
+	width:20%;
+	padding:2%;
+	margin:2%;
+	font-size:2.3vw;
+	border-radius:5%;
+}
+
+
+#mytable{
+	max-width:100%;
+		
+	border:1px solid white;
+	background-color:black;
+	color:yellow;
+}
+th,td {
+	
+
+padding:4%;
+	border:1px solid white;
+font-size:2.4vw;
+background-color:black;
+	color:yellow;
+}
+
+
+}
+	

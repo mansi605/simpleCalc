@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+
+var wrap = $("#main1");
+var add_but = $(".but");
+
+
+
+$(add_but).click(function(){
+	
+	
+$(wrap).append('<div> <li> </li> <input type="text" id="in1" placeholder ="write item name" >  <input type="text" id="in3" placeholder ="write quantity" > <input type="text" id="in2" placeholder ="write price" >  <a href="#"  id="rem" > Remove</a> </div> ');
+
+
+});
+
+
+$(wrap).on("click" , "#rem" ,function(){
+$(this).parent('div ').remove();
+
+
+});
+
+});
+</script>
+
+
+<body>
+
+<h1> Let's start making the list </h1>
+<div id ="main1">
+ <button class ="but" > ADD </button> 
+
+</div>
+</body>
+</html>
